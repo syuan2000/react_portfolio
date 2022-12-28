@@ -21,7 +21,7 @@ export const Banner = () =>{
         let ticker = setInterval(()=>{
             tick();
         }, delta);
-
+        // this function will be executed before the above logic except for the first time
         return () => {clearInterval(ticker)};
     }, [text])
 
