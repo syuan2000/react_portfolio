@@ -3,11 +3,30 @@ import {Container, Col, Row, Nav, TabContent} from 'react-bootstrap'
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import workImg1 from "../assets/img/foxconn.png";
+import workImg2 from "../assets/img/oracle.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import { ProjectCard } from './ProjectCard';
 
 export const Project =() =>{
+    const works = [
+        {
+            title: "Software Engineer I - Oracle Cerner",
+            description: "Developed web products with React.js \n Maintain back-end data that optimizes RESTful APIs / microservices performance",
+            imgUrl: workImg1,
+          },
+          {
+            title: "Software Engineer Intern - Foxconn",
+            description: "Utilized Python and Django Framework to built up API for data exchange between the branch companies",
+            imgUrl: workImg2,
+          },
+          {
+            title: "Business Startup",
+            description: "Design & Development",
+            imgUrl: projImg3,
+          },
+    ]
     const projects = [
         {
             title: "Business Startup",
@@ -30,15 +49,15 @@ export const Project =() =>{
             <Container>
                 <Row>
                     <Col>
-                        <h2> Project </h2>
-                        <p>project project project </p>
+                        <h2> Experience </h2>
+                        <p></p>
                         <Tab.Container id="project-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center" id="pills-tab" >
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                    <Nav.Link eventKey="first">Work</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                    <Nav.Link eventKey="second">Project</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Tab 3</Nav.Link>
@@ -48,11 +67,11 @@ export const Project =() =>{
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project, index) =>{
+                                            works.map((work, index) =>{
                                                 return (
                                                     <ProjectCard
                                                         key={index}
-                                                        {...project} 
+                                                        {...work} 
                                                     />
                                                 )
                                             })
