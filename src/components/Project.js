@@ -1,10 +1,9 @@
 import { Tab } from 'react-bootstrap'
 import {Container, Col, Row, Nav, TabContent} from 'react-bootstrap'
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import workImg1 from "../assets/img/foxconn.png";
-import workImg2 from "../assets/img/oracle.png";
+import workImg1 from "../assets/img/oracle.png";
+import workImg2 from "../assets/img/foxconn.png";
+import workImg3 from "../assets/img/mizzou.png";
+
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import { ProjectCard } from './ProjectCard';
@@ -13,7 +12,7 @@ export const Project =() =>{
     const works = [
         {
             title: "Software Engineer I - Oracle Cerner",
-            description: "Developed web products with React.js \n Maintain back-end data that optimizes RESTful APIs / microservices performance",
+            description: "Developed web products with React.js. Maintain back-end data that optimizes RESTful APIs / microservices performance",
             imgUrl: workImg1,
           },
           {
@@ -22,26 +21,26 @@ export const Project =() =>{
             imgUrl: workImg2,
           },
           {
-            title: "Business Startup",
-            description: "Design & Development",
-            imgUrl: projImg3,
+            title: "Teaching Assistant - University of Missouri",
+            description: "Assist in a total of 4 classes in IT program ex. Python problem solving and database system courses. \n Hold office hour to help students with questions and challenges.",
+            imgUrl: workImg3,
           },
     ]
     const projects = [
         {
             title: "Business Startup",
             description: "Design & Development",
-            imgUrl: projImg1,
+            imgUrl: workImg1,
           },
           {
             title: "Business Startup",
             description: "Design & Development",
-            imgUrl: projImg2,
+            imgUrl: workImg1,
           },
           {
             title: "Business Startup",
             description: "Design & Development",
-            imgUrl: projImg3,
+            imgUrl: workImg1,
           },
     ]
     return(
